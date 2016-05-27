@@ -1,0 +1,54 @@
+
++-------+
+| BUILD |
++-------+
+
+Comments: make
+
++---------+
+|TESTCASES|
++---------+
+
+The commandline syntax is as follows:
+    hw7 rc4 -p=pphrase [-l=len]
+    hw7 x1 [file]
+    hw7 x2 [file]
+    hw7 x3 [file]
+    hw7 x5 -d=dval [file]
+
+
+No warnings. 
+Bad command line handled. 
+
+
+Files in the zip - 
+
+main.c - main file with command line parsing.
+rc4.c - rc4 algorithm
+x1.c - x4 functionality
+x2.c - x5 functionality
+x3.c - x3 functionality
+x5.c  - x5 functionality
+hw7.h - header file.
+Makefile - used for make.
+
+To run open ssl - 
+To access the openssl library in your programming environment on nunki.usc.edu, please note the following:
+Add the /home/scf-22/csci551b/openssl/bin directory to your path (environment variable PATH):
+If your shell is csh, you can do:
+set path=(/home/scf-22/csci551b/openssl/bin $path)
+rehash
+If your shell is bash, you can do:
+export PATH=/home/scf-22/csci551b/openssl/bin:$PATH
+Add the /home/scf-22/csci551b/openssl/lib directory to your LD_LIBRARY_PATH environment variable:
+If your shell is csh, you can do:
+setenv LD_LIBRARY_PATH /home/scf-22/csci551b/openssl/lib:/usr/lib:/lib
+If your shell is bash, you can do:
+export LD_LIBRARY_PATH=/home/scf-22/csci551b/openssl/lib:/usr/lib:/lib
+Add the /home/scf-22/csci551b/openssl/ssl/man directory to your MANPATH environment variable:
+If your shell is csh, you can do:
+setenv MANPATH /home/scf-22/csci551b/openssl/ssl/man:$MANPATH
+If your shell is bash, you can do:
+export MANPATH=/home/scf-22/csci551b/openssl/ssl/man:$MANPATH
+
+
